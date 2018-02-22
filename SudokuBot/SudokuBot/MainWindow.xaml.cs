@@ -20,10 +20,33 @@ namespace SudokuBot
     /// </summary>
     public partial class MainWindow : Window
     {
+        Label[] LabelsArray = new Label[81];
+
+        ref Label getLabel(int x, int y)
+        {
+            return ref LabelsArray[x + y * 9];
+        }
+
+        void MakeLabels()
+        {
+            for(int x = 0; x < 9; x++)
+                for (int y = 0; y < 9; y++)
+                {
+                    Label curLab = new Label();
+                    getLabel(x, y) = curLab;
+                    curLab.Content = "8";
+                    curLab.Background = new SolidColorBrush(Colors.Green);
+                    curLab.Margin = new Thickness(-252 + (x*60), -252 + (y*60), 0, 0);
+                    curLab.Width = 26;
+                    curLab.Height = 26;
+                    grid_myGrid.Children.Add(curLab);
+                }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
-
+            MakeLabels();
         }
     }
 }
