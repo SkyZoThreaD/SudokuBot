@@ -8,8 +8,9 @@
         Title="Sudoku Bot" Height="383.381" Width="336.849">
     <Grid Margin="0,0,2,0">
         <Rectangle x:Name="rec_Grid" Fill="#FFADADAD" HorizontalAlignment="Left" Height="285" Stroke="Black" VerticalAlignment="Top" Width="284" RenderTransformOrigin="1.69,2.664" Margin="10,10,0,0"/>
-        <Button x:Name="bt_Solve" Content="Button" HorizontalAlignment="Left" Margin="229,309,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.224,1.317"/>
+        <Button x:Name="bt_Solve" Content="Resolve" HorizontalAlignment="Left" Margin="229,309,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.224,1.317" Click="bt_Solve_Click"/>
         <Grid x:Name="grid_myGrid" HorizontalAlignment="Left" Height="284" Margin="10,10,0,0" VerticalAlignment="Top" Width="284" Grid.Row="9" Grid.Column="9"/>
+        <Button x:Name="bt_Random" Content="Generate random" HorizontalAlignment="Left" Margin="119,309,0,0" VerticalAlignment="Top" Width="105" Click="bt_Random_Click"/>
 
     </Grid>
 </Window>

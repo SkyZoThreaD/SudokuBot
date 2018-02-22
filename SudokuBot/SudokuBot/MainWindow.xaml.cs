@@ -48,5 +48,58 @@ namespace SudokuBot
             InitializeComponent();
             MakeLabels();
         }
+
+        private void bt_Solve_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt_Random_Click(object sender, RoutedEventArgs e)
+        {
+            // first fill with random numbers
+            Random r = new Random();
+            for (int x = 0; x < 9; x++)
+                for (int y = 0; y < 9; y++)
+                {
+                    int rInt = r.Next(1, 10);
+                    getLabel(x, y).Content = "" + rInt;
+                }
+            // then delete double in lines
+            for(int curNb = 1; curNb < 10; curNb++)
+                for (int x = 0; x < 9; x++)
+                {
+                    bool found = false;
+
+                    for (int y = 0; y < 9; y++)
+                    {
+                        if((string)getLabel(x,y).Content == ""+curNb )
+                        {
+                            if (!found) found = true;
+                            else
+                            {
+                                getLabel(x, y).Content = "";
+                            }
+                        }
+                    }
+                }
+            // other direction
+            for (int curNb = 1; curNb < 10; curNb++)
+                for (int y = 0; y < 9; y++)
+                {
+                    bool found = false;
+
+                    for (int x = 0; x < 9; x++)
+                    {
+                        if ((string)getLabel(x, y).Content == "" + curNb)
+                        {
+                            if (!found) found = true;
+                            else
+                            {
+                                getLabel(x, y).Content = "";
+                            }
+                        }
+                    }
+                }
+        }
     }
 }
