@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SudokuBot"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Sudoku Bot" Height="383.381" Width="336.849">
+    <Grid Margin="0,0,2,0">
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="285" Stroke="Black" VerticalAlignment="Top" Width="284" RenderTransformOrigin="1.69,2.664" Margin="10,10,0,0"/>
+        <Button x:Name="bt_Solve" Content="Button" HorizontalAlignment="Left" Margin="229,309,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.224,1.317"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="14,14,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="107,14,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="200,14,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="14,107,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="107,107,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="200,107,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="14,200,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="107,200,0,0"/>
+        <Rectangle Fill="#FF292929" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.69,2.664" Margin="200,200,0,0"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,16,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,16,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74,16,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT" RenderTransformOrigin="0.258,3.99"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,45,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,45,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74,45,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT" RenderTransformOrigin="0.258,3.99"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,74,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT" RenderTransformOrigin="2.669,3.515"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,74,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT"/>
+        <Label Content=" 8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74,74,0,0" Height="27" Width="27" Background="Black" Foreground="White" FontSize="14" FontWeight="Bold" FontFamily="Perpetua Titling MT" RenderTransformOrigin="0.258,3.99"/>
+
     </Grid>
 </Window>
